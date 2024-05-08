@@ -5,7 +5,9 @@ import easygui as eg
 from PIL import Image
 
 def remove(image):
-    Image.open(image)
+    im=Image.open(image)
+    remove(im)
+    im.save()
     print(image)
 
 
